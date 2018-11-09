@@ -1,0 +1,16 @@
+.header {
+  padding: 20px;
+}
+
+.header__wrap {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  @include max(1350) {
+    display: flex;
+    align-items: center;
+  }
+  @include max(768) {
+    display: block;
+  }
+}
