@@ -1,0 +1,58 @@
+.video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: none;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 999;
+  overflow: auto;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+    height: 100%;
+    width: 0;
+    user-select: none;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.video__dialog {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 1024px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.video-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(#000, 0.3);
+  transition: all .3s ease;
+  z-index: 1;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.video-open {
+  overflow: hidden;
+}

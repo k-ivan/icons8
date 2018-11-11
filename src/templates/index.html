@@ -2,353 +2,357 @@
 
 {% block content %}
 
-<button class="gamburg" aria-label="Toggle menu">
-  <svg width="8" height="38"><use xlink:href="img/symbol.svg#menu"/></svg>
-</button>
+<div class="wrap">
 
-<header class="header">
-  <div class="header__wrap">
-    <a href="" class="logo">
-      <img src="img/logo.svg" width="34" height="34" alt="icons8 logo">
-    </a>
+  <button class="gamburg" aria-label="Toggle menu">
+    <svg width="8" height="38"><use xlink:href="img/symbol.svg#menu"/></svg>
+  </button>
 
-    <nav class="nav">
-      {# <div class="container"> #}
-        <ul class="nav__list nav__list--center">
-          <li class="nav__item"><a href="#0" class="nav__link">Products</a></li>
-          <li class="nav__item"><a href="#0" class="nav__link nav__link--muted">To work together.</a></li>
-          <li class="nav__item nav__item--pull"><a href="#0" class="nav__link">Downloads</a></li>
-          <li class="nav__item"><a href="#0" class="nav__link">Buy</a></li>
+  <header class="header">
+    <div class="header__wrap">
+      <a href="" class="logo">
+        <img src="img/logo.svg" width="34" height="34" alt="icons8 logo">
+      </a>
+
+      <nav class="nav">
+        {# <div class="container"> #}
+          <ul class="nav__list nav__list--center">
+            <li class="nav__item"><a href="#0" class="nav__link">Products</a></li>
+            <li class="nav__item"><a href="#0" class="nav__link nav__link--muted">To work together.</a></li>
+            <li class="nav__item nav__item--pull"><a href="#0" class="nav__link">Downloads</a></li>
+            <li class="nav__item"><a href="#0" class="nav__link">Buy</a></li>
+          </ul>
+        {# </div> #}
+        <ul class="nav__list nav__list--right">
+          <li class="nav__item"><a href="" class="nav__link">Ru</a></li>
+          <li class="nav__item"><a href="" class="nav__link">My Account</a></li>
         </ul>
-      {# </div> #}
-      <ul class="nav__list nav__list--right">
-        <li class="nav__item"><a href="" class="nav__link">Ru</a></li>
-        <li class="nav__item"><a href="" class="nav__link">My Account</a></li>
+      </nav>
+    </div>
+
+  </header>
+
+  <section class="about">
+    <h2 class="visuallyhidden">About</h2>
+    <div class="about__wrap container">
+      <p class="about__header">
+        ​​Icons8 allows<br> the professional<br> and amateur<br> designers<br> express their ideas<br> by providing the right<br> design elements<br> at the right time.
+      </p>
+      <div class="about__video">
+        <button class="about__video-btn" id="videoTrigger" aria-label="play about video"></button>
+        <div class="about__video-info">
+          <div class="about__video-name">About icons8</div>
+          <div class="about__video-duration">1:26</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo promo--solution">
+    <h2 class="visuallyhidden">Tabs</h2>
+    <div class="tabs container">
+      <div class="tabs__controls">
+        <a href="#promo-problem" class="tabs__link" data-tab-class="promo--problem">Problem</a>
+        <a href="#promo-solution" class="tabs__link is-active" data-tab-class="promo--solution">Solution</a>
+      </div>
+      <div class="tabs__wrap">
+        <div class="tabs__section promo__problem" id="promo-problem">
+          <div class="container">
+            <p class="promo__text">
+              Everybody is full<br>
+              of creativity until he gets bored<br>
+              and distracted.
+            </p>
+            <div class="promo__wrap">
+
+              <div class="menu promo__menu">
+                <div class="menu__header">Mundane<br> design operations<br> ore:</div>
+                <ul class="menu__list promo__list">
+                  <li class="menu__item"><a href="#0" class="menu__link">Drawing rectangles</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Selecting layers</a></li>
+                </ul>
+              </div>
+              <div class="menu promo__menu">
+                <div class="menu__header promo-hidden">Mundane<br> design operations<br> ore:</div>
+                <ul class="menu__list promo__list">
+                  <li class="menu__item"><a href="#0" class="menu__link">Aligning the objects</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Rounding</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Creating symbols </a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Destroying</a></li>
+                </ul>
+              </div>
+              <div class="promo__slogan">
+                <div class="promo__slogan-hidden">Mundane<br> design operations<br> ore:</div>
+                And few dozen other boring, low-level<br> tasks that kill creativity.
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tabs__section promo__solution is-active" id="promo-solution">
+          <div class="container">
+            <p class="promo__text">
+              To deliver the content<br>
+              before designers even think<br>
+              about it.
+            </p>
+            <div class="promo__wrap">
+
+              <div class="menu promo__menu">
+                <div class="menu__header">We Create</div>
+                <ul class="menu__list promo__list">
+                  <li class="menu__item"><a href="#0" class="menu__link">Design elements</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Tools</a></li>
+                </ul>
+              </div>
+              <div class="menu promo__menu">
+                <div class="menu__header">We Share</div>
+                <ul class="menu__list promo__list">
+                  <li class="menu__item"><a href="#0" class="menu__link">Icons in any size and style</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Stock зhotos</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Music for your videos</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">Illustrations</a></li>
+                  <li class="menu__item"><a href="#0" class="menu__link">More</a></li>
+                </ul>
+              </div>
+              <div class="promo__slogan">
+                <div class="promo__slogan-hidden">&nbsp;</div>
+                We aim for the creative world.
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="meanwhile">
+    <h2 class="visuallyhidden">Meanwhile</h2>
+    <div class="container">
+      <div class="meanwhile__muted">Meanwhile we use</div>
+      <ul class="meanwhile__list">
+        <li class="meanwhile__item"><a href="" class="meanwhile__link">Predictive analytics</a></li>
+        <li class="meanwhile__item"><a href="" class="meanwhile__link">better UX</a></li>
+        <li class="meanwhile__item"><a href="" class="meanwhile__link">Machine learning</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </section>
 
-</header>
-
-<section class="about">
-  <h2 class="visuallyhidden">About</h2>
-  <div class="about__wrap container">
-    <p class="about__header">
-      ​​Icons8 allows<br> the professional<br> and amateur<br> designers<br> express their ideas<br> by providing the right<br> design elements<br> at the right time.
+  <section class="team">
+    <h2 class="visuallyhidden">Team</h2>
+    <div class="team__header">team of 40</div>
+    <p class="team__text">
+      Unlike designer marketplaces that resell the files,<br>
+      we actually produce our content.<br>
+      We tag it. And we create the custom tools<br>
+      to keep it at hand.
     </p>
-    <div class="about__video">
-      <button class="about__video-btn" aria-label="play about video"></button>
-      <div class="about__video-info">
-        <div class="about__video-name">About icons8</div>
-        <div class="about__video-duration">1:26</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="promo promo--solution">
-  <h2 class="visuallyhidden">Tabs</h2>
-  <div class="tabs container">
-    <div class="tabs__controls">
-      <a href="#promo-problem" class="tabs__link" data-tab-class="promo--problem">Problem</a>
-      <a href="#promo-solution" class="tabs__link is-active" data-tab-class="promo--solution">Solution</a>
-    </div>
-    <div class="tabs__wrap">
-      <div class="tabs__section promo__problem" id="promo-problem">
-        <div class="container">
-          <p class="promo__text">
-            Everybody is full<br>
-            of creativity until he gets bored<br>
-            and distracted.
-          </p>
-          <div class="promo__wrap">
-
-            <div class="menu promo__menu">
-              <div class="menu__header">Mundane<br> design operations<br> ore:</div>
-              <ul class="menu__list promo__list">
-                <li class="menu__item"><a href="#0" class="menu__link">Drawing rectangles</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Selecting layers</a></li>
-              </ul>
-            </div>
-            <div class="menu promo__menu">
-              <div class="menu__header promo-hidden">Mundane<br> design operations<br> ore:</div>
-              <ul class="menu__list promo__list">
-                <li class="menu__item"><a href="#0" class="menu__link">Aligning the objects</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Rounding</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Creating symbols </a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Destroying</a></li>
-              </ul>
-            </div>
-            <div class="promo__slogan">
-              <div class="promo__slogan-hidden">Mundane<br> design operations<br> ore:</div>
-              And few dozen other boring, low-level<br> tasks that kill creativity.
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="tabs__section promo__solution is-active" id="promo-solution">
-        <div class="container">
-          <p class="promo__text">
-            To deliver the content<br>
-            before designers even think<br>
-            about it.
-          </p>
-          <div class="promo__wrap">
-
-            <div class="menu promo__menu">
-              <div class="menu__header">We Create</div>
-              <ul class="menu__list promo__list">
-                <li class="menu__item"><a href="#0" class="menu__link">Design elements</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Tools</a></li>
-              </ul>
-            </div>
-            <div class="menu promo__menu">
-              <div class="menu__header">We Share</div>
-              <ul class="menu__list promo__list">
-                <li class="menu__item"><a href="#0" class="menu__link">Icons in any size and style</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Stock зhotos</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Music for your videos</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">Illustrations</a></li>
-                <li class="menu__item"><a href="#0" class="menu__link">More</a></li>
-              </ul>
-            </div>
-            <div class="promo__slogan">
-              <div class="promo__slogan-hidden">&nbsp;</div>
-              We aim for the creative world.
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<section class="meanwhile">
-  <h2 class="visuallyhidden">Meanwhile</h2>
-  <div class="container">
-    <div class="meanwhile__muted">Meanwhile we use</div>
-    <ul class="meanwhile__list">
-      <li class="meanwhile__item"><a href="" class="meanwhile__link">Predictive analytics</a></li>
-      <li class="meanwhile__item"><a href="" class="meanwhile__link">better UX</a></li>
-      <li class="meanwhile__item"><a href="" class="meanwhile__link">Machine learning</a></li>
+    <ul class="team__faces">
+      {% for i in range(0, 11) -%}
+        <li><img src="http://i.pravatar.cc/100?img={{i}}" width="100" height="100" alt=""></li>
+      {%- endfor %}
     </ul>
-  </div>
-</section>
 
-<section class="team">
-  <h2 class="visuallyhidden">Team</h2>
-  <div class="team__header">team of 40</div>
-  <p class="team__text">
-    Unlike designer marketplaces that resell the files,<br>
-    we actually produce our content.<br>
-    We tag it. And we create the custom tools<br>
-    to keep it at hand.
-  </p>
+    <div class="container">
+      <div class="team__specialists">We are</div>
+      <div class="team__wrap">
 
-  <ul class="team__faces">
-    {% for i in range(0, 11) -%}
-      <li><img src="http://i.pravatar.cc/100?img={{i}}" width="100" height="100" alt=""></li>
-    {%- endfor %}
-  </ul>
+        <div class="menu team__menu">
+          <ul class="menu__list team__list">
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Icon designers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Illustrators</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">UX designers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Motion designer</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">3D artists</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Photographer & makeup artist</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Retouch artists</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Musicians</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu team__menu">
+          <ul class="menu__list team__list">
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Front-end developers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">.Net developers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">QA</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">DevOps</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Computer vision expert</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Writers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0" class="menu__link">Support engineers</a>
+            </li>
+          </ul>
+        </div>
 
-  <div class="container">
-    <div class="team__specialists">We are</div>
-    <div class="team__wrap">
+        <div class="team__cheers">
+          <p>We are a fully remote tribe.</p>
+          <p>Cheers.</p>
+        </div>
 
-      <div class="menu team__menu">
-        <ul class="menu__list team__list">
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Icon designers</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Illustrators</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">UX designers</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Motion designer</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">3D artists</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Photographer & makeup artist</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Retouch artists</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Musicians</a>
-          </li>
-        </ul>
-      </div>
-      <div class="menu team__menu">
-        <ul class="menu__list team__list">
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Front-end developers</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">.Net developers</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">QA</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">DevOps</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Computer vision expert</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Writers</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0" class="menu__link">Support engineers</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="team__cheers">
-        <p>We are a fully remote tribe.</p>
-        <p>Cheers.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="banners">
-  <h2 class="visuallyhidden">Banners</h2>
-  <div class="banners__wrap">
-    <a href="#0" class="banners__item">
-      <div class="banners__item-title">Api</div>
-      <div class="banners__item-slogan banners__item-slogan--rotate">Use, Share and Create</div>
-    </a>
-    <a href="#0" class="banners__item banners__item--accent">
-      <div class="banners__item-title">Products</div>
-      <div class="banners__item-slogan">Become our hero</div>
-    </a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__wrap">
-      <!-- nav  -->
-      <div class="footer__nav menu">
-        <div class="menu__header footer__nav-header footer__nav-header">icon8</div>
-        <ul class="menu__list footer__list">
-          <li class="menu__item"><a href="#0" class="menu__link">Business Model </a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">Team </a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav menu">
-        <div class="menu__header footer__nav-header">support</div>
-        <ul class="menu__list footer__list">
-          <li class="menu__item"><a href="#0" class="menu__link">Forum</a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">FAQ</a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="footer__nav menu">
-        <div class="menu__header footer__nav-header">ideas</div>
-        <ul class="menu__list footer__list">
-          <li class="menu__item"><a href="#0" class="menu__link">Lunacy Features</a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">Photos</a></li>
-          <li class="menu__item"><a href="#0" class="menu__link">Icons</a></li>
-        </ul>
-      </div>
-      <!-- nav  -->
-      <div class="footer__market">
-        <a href="#0">
-          <img src="img/appstore.png" alt="App Store">
-        </a>
-        <a href="#0">
-          <img src="img/playmarket.png" alt="Play market">
-        </a>
       </div>
     </div>
-    <div class="footer__divider"></div>
-    <div class="footer__wrap">
+  </section>
+
+  <section class="banners">
+    <h2 class="visuallyhidden">Banners</h2>
+    <div class="banners__wrap">
+      <a href="#0" class="banners__item">
+        <div class="banners__item-title">Api</div>
+        <div class="banners__item-slogan banners__item-slogan--rotate">Use, Share and Create</div>
+      </a>
+      <a href="#0" class="banners__item banners__item--accent">
+        <div class="banners__item-title">Products</div>
+        <div class="banners__item-slogan">Become our hero</div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
         <!-- nav  -->
         <div class="footer__nav menu">
-          <div class="menu__header footer__nav-header">Products</div>
+          <div class="menu__header footer__nav-header footer__nav-header">icon8</div>
           <ul class="menu__list footer__list">
-            <li class="menu__item"><a href="#0" class="menu__link">Icons8 App</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Moose</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Lunacy</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Sketch the Ripper</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Music</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Sounds</a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">Business Model </a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">Team </a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">Blog</a></li>
           </ul>
         </div>
         <div class="footer__nav menu">
-          <div class="menu__header footer__nav-header">Api</div>
+          <div class="menu__header footer__nav-header">support</div>
           <ul class="menu__list footer__list">
+            <li class="menu__item"><a href="#0" class="menu__link">Forum</a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">FAQ</a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav menu">
+          <div class="menu__header footer__nav-header">ideas</div>
+          <ul class="menu__list footer__list">
+            <li class="menu__item"><a href="#0" class="menu__link">Lunacy Features</a></li>
+            <li class="menu__item"><a href="#0" class="menu__link">Photos</a></li>
             <li class="menu__item"><a href="#0" class="menu__link">Icons</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Free Photos</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Music</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav menu">
-          <div class="menu__header footer__nav-header">Labs</div>
-          <ul class="menu__list footer__list">
-            <li class="menu__item"><a href="#0" class="menu__link">Omg-Img</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">iMessage Stickers</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Line Awesome</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Cosmic Pedro</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Scribble Al</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">Pharm</a></li>
-            <li class="menu__item"><a href="#0" class="menu__link">We Love SVG</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav menu">
-          <div class="menu__header footer__nav-header">Downloads</div>
-          <ul class="menu__list footer__list">
-              <li class="menu__item"><a href="#0" class="menu__link">Icons8 for Mac and Windows</a></li>
-              <li class="menu__item"><a href="#0" class="menu__link">Free photos</a></li>
           </ul>
         </div>
         <!-- nav  -->
+        <div class="footer__market">
+          <a href="#0">
+            <img src="img/appstore.png" alt="App Store">
+          </a>
+          <a href="#0">
+            <img src="img/playmarket.png" alt="Play market">
+          </a>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__wrap">
+          <!-- nav  -->
+          <div class="footer__nav menu">
+            <div class="menu__header footer__nav-header">Products</div>
+            <ul class="menu__list footer__list">
+              <li class="menu__item"><a href="#0" class="menu__link">Icons8 App</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Moose</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Lunacy</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Sketch the Ripper</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Music</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Sounds</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav menu">
+            <div class="menu__header footer__nav-header">Api</div>
+            <ul class="menu__list footer__list">
+              <li class="menu__item"><a href="#0" class="menu__link">Icons</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Free Photos</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Music</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav menu">
+            <div class="menu__header footer__nav-header">Labs</div>
+            <ul class="menu__list footer__list">
+              <li class="menu__item"><a href="#0" class="menu__link">Omg-Img</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">iMessage Stickers</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Line Awesome</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Cosmic Pedro</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Scribble Al</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">Pharm</a></li>
+              <li class="menu__item"><a href="#0" class="menu__link">We Love SVG</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav menu">
+            <div class="menu__header footer__nav-header">Downloads</div>
+            <ul class="menu__list footer__list">
+                <li class="menu__item"><a href="#0" class="menu__link">Icons8 for Mac and Windows</a></li>
+                <li class="menu__item"><a href="#0" class="menu__link">Free photos</a></li>
+            </ul>
+          </div>
+          <!-- nav  -->
+        </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copy">© 2018 Icons8 LLC.</div>
+        <div class="footer__terms">
+          <a href="#0">Privacy Policy</a>
+          <a href="#0">Terms and Conditions</a>
+        </div>
+        <div class="footer__social social">
+          <div class="social__follow">Follow us</div>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#facebook"/></svg></a>
+            </li>
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#instagram"/></svg></a>
+            </li>
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#twitter"/></svg></a>
+            </li>
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#dribbble"/></svg></a>
+            </li>
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#medium"/></svg></a>
+            </li>
+            <li class="social__item">
+              <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#g+"/></svg></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-    <div class="footer__bottom">
-      <div class="footer__copy">© 2018 Icons8 LLC.</div>
-      <div class="footer__terms">
-        <a href="#0">Privacy Policy</a>
-        <a href="#0">Terms and Conditions</a>
-      </div>
-      <div class="footer__social social">
-        <div class="social__follow">Follow us</div>
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#facebook"/></svg></a>
-          </li>
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#instagram"/></svg></a>
-          </li>
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#twitter"/></svg></a>
-          </li>
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#dribbble"/></svg></a>
-          </li>
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#medium"/></svg></a>
-          </li>
-          <li class="social__item">
-            <a href="#0" class="social__link"><svg><use xlink:href="img/symbol.svg#g+"/></svg></a>
-          </li>
-        </ul>
-      </div>
     </div>
+  </footer>
 
-  </div>
-</footer>
+</div>
 
 {% endblock %}
