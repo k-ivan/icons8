@@ -13,10 +13,10 @@
 }
 
 .meanwhile__item + .meanwhile__item {
-  border-top: 1px solid rgba(#333, 0.2);
+  border-top: 1px solid rgba(#ccc, 0.2);
 }
 
-.meanwhile__link {
+.meanwhile__item {
   display: block;
   padding: 20px;
   text-align: center;
