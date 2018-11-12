@@ -98,8 +98,10 @@
   }
 }
 
-.popup-open .nav__link--popup {
-  color: #fff;
+@include max(768) {
+  .popup-open .nav__link--popup {
+    color: #fff;
+  }
 }
 
 .popup-open .nav__popup {
