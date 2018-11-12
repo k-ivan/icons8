@@ -36,6 +36,10 @@
     width: 100%;
     max-width: 1040px;
     margin: auto;
+    justify-content: center;
+    @include max(990) {
+      justify-content: flex-start;
+    }
   }
 
   @include max(768) {
@@ -51,26 +55,8 @@
 
 .nav__item {
   margin-right: 36px;
-  &:nth-child(3) {
-    margin-right: 57px;
-    @include max(1380) {
-      margin-right: 36px;
-    }
-  }
   &:last-child {
     margin-right: 0;
-  }
-  &--pull {
-    margin-left: auto;
-    @include max(1380) {
-      margin-left: 0;
-    }
-  }
-  @include max(768) {
-    margin-right: 0;
-    &:nth-child(3) {
-      margin-right: 0;
-    }
   }
 }
 
