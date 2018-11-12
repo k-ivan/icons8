@@ -55,6 +55,14 @@
   background-size: 7px 8px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: box-shadow 0.25s;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(#6d4da0, 0.3);
+  }
+  &:active {
+    background-color: darken(#6d4da0, 5%);
+  }
 }
 
 .about__video-info {

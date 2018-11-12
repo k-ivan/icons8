@@ -10,10 +10,10 @@ class VideoModal {
       </div>
     `;
     this.url = url;
-    this.closeBtn = null;
     this.iframe = null;
     this.modal = null;
     this.overlay = null;
+    this.dialog = null;
   }
 
   _create() {
@@ -21,15 +21,14 @@ class VideoModal {
     this.modal.className = 'video';
     this.modal.innerHTML = this.tpl;
 
-    const overlay = document.createElement('div');
-    overlay.className = 'video-overlay';
+    this.overlay = document.createElement('div');
+    this.overlay.className = 'video-overlay';
 
     this.body.appendChild(this.modal);
-    this.body.appendChild(overlay);
+    this.body.appendChild(this.overlay);
 
+    this.dialog = this.modal.querySelector('.video__dialog');
     this.iframe = this.modal.querySelector('iframe');
-    this.closeBtn = this.modal.querySelector('.video__close');
-    this.overlay = this.body.querySelector('.video-overlay');
   }
 
   _attachEvents() {
@@ -46,9 +45,8 @@ class VideoModal {
   }
 
   _closeHandler(e) {
+    if (this.dialog.contains(e.target)) return;
     e.preventDefault();
-    console.log(e);
-
     this.close();
   }
 
