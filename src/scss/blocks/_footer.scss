@@ -20,6 +20,7 @@
 
 .footer__nav-header {
   margin-bottom: 20px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -28,6 +29,10 @@
   a {
     font-weight: 700;
   }
+}
+
+.footer__link-label {
+  margin-left: 10px;
 }
 
 .footer__divider {
