@@ -57,7 +57,7 @@ const dlPopupParent = dlPopupTrigger.closest('.nav__item--has-popup');
 let dlPopupState = false;
 
 dlPopupTrigger.addEventListener('click', function(e) {
-  e.preventDefault;
+  e.preventDefault();
   dlPopupParent.classList.toggle('popup-open');
   dlPopupState = !dlPopupState;
 });
