@@ -4,9 +4,12 @@
 
 <div class="wrap">
 
-  <button class="gamburg" aria-label="Toggle menu">
-    <svg width="8" height="38"><use xlink:href="img/symbol.svg#menu"/></svg>
-  </button>
+  <div class="gamburg">
+    <button class="gamburg__btn" aria-label="Toggle menu">
+      <svg width="8" height="38"><use xlink:href="img/symbol.svg#menu"/></svg>
+    </button>
+    <div class="gamburg__overlay"></div>
+  </div>
 
   <header class="header">
     <div class="header__wrap">
@@ -21,6 +24,13 @@
           <li class="nav__item"><a href="https://icons8.com/music" class="nav__link">Music</a></li>
           <li class="nav__item"><a href="#0" class="nav__link">Illustrations</a></li>
           <li class="nav__item"><a href="https://icons8.com/lunacy" class="nav__link">Lunacy</a></li>
+          <li class="nav__item nav__item--has-popup">
+            <a href="#downloads" class="nav__link nav__link--popup">Downloads</a>
+            <div class="nav__popup">
+              <p><a href="http://desktop.icons8.com/lunacy/LunacySetup.exe">Lunacy</a>, graphics software compartible with Sketch</p>
+              <p><a href="#0">Pichon</a>, 85k icons offline on your computer</p>
+            </div>
+          </li>
         </ul>
         <ul class="nav__list nav__list--right">
           <li class="nav__item"><a href="" class="nav__link">Ru</a></li>

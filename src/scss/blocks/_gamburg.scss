@@ -1,5 +1,11 @@
 .gamburg {
   display: none;
+  @include max(768) {
+    display: block;
+  }
+}
+
+.gamburg__btn {
   position: fixed;
   top: 50%;
   left: 10px;
@@ -21,13 +27,28 @@
     height: 38px;
 
   }
-  @include max(768) {
-    display: block;
-  }
+}
+
+.gamburg__overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 998;
+  background-color: rgba(#000, 0.3);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
 }
 
 @include max(768) {
-  .nav-open .gamburg {
+  .nav-open .gamburg__btn {
     transform: translate3d(220px, 0, 0);
+  }
+  .nav-open .gamburg__overlay {
+    visibility: visible;
+    opacity: 1;
   }
 }
