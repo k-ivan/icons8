@@ -10,11 +10,12 @@
     top: 0;
     left: -220px;
     bottom: 0;
+    z-index: 9999;
     padding-top: 20px;
     width: 220px;
     flex-direction: column;
     background-color: #333;
-    z-index: 9999;
+    overflow: auto;
     transition: transform .2s ease;
   }
 }
@@ -38,7 +39,7 @@
     width: 100%;
     max-width: 1040px;
     margin: auto;
-    justify-content: center;
+    // justify-content: center;
     @include max(1070) {
       justify-content: flex-start;
     }
@@ -65,6 +66,12 @@
   }
   &--has-popup {
     position: relative;
+  }
+  &--pull {
+    margin-left: auto;
+    @include max(1450) {
+      margin-left: 0;
+    }
   }
   @include max(768) {
     margin-right: 0;
