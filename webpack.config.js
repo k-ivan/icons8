@@ -46,11 +46,11 @@ function createConfig(env) {
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
       }),
-      new BundleAnalyzerPlugin({
-        analyzerMode: 'static',
-        analyzerPort: 4000,
-        openAnalyzer: false,
-      })
+      // new BundleAnalyzerPlugin({
+      //   analyzerMode: 'static',
+      //   analyzerPort: 4000,
+      //   openAnalyzer: false,
+      // })
     ],
     resolve: {
       extensions: ['.js']
@@ -66,19 +66,6 @@ function createConfig(env) {
         }],
     },
   };
-
-  // if (isProduction) {
-  //   webpackConfig.plugins.push(
-  //     new webpack.LoaderOptionsPlugin({
-  //       minimize: true,
-  //     }),
-  //     new webpack.optimize.UglifyJsPlugin({
-  //       compress: {
-  //         warnings: false,
-  //       },
-  //     })
-  //   );
-  // }
 
   return webpackConfig;
 }
