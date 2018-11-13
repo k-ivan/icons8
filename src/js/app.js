@@ -1,4 +1,5 @@
 import svg4everybody from 'svg4everybody';
+import './polyfills/DOMpolyfill';
 import VideoModal from './components/videomodal';
 
 svg4everybody();
