@@ -4,7 +4,7 @@
 }
 
 .social__follow {
-  margin-right: 60px;
+  margin-right: 69px;
   color: currenColor;
   @include max(480) {
     display: none;
@@ -19,7 +19,7 @@
 }
 
 .social__item {
-  margin-right: 20px;
+  margin-right: 26px;
   &:last-child {
     margin-right: 0;
   }
@@ -29,8 +29,8 @@
   color: currentColor;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     fill: currentColor;
   }
 }
