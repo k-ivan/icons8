@@ -61,17 +61,20 @@
 
 .nav__item {
   margin-right: 36px;
-  &:last-child {
+  &:last-child:not(&--pull-left) {
     margin-right: 0;
   }
   &--has-popup {
     position: relative;
   }
-  &--pull {
+  &--pull-right {
     margin-left: auto;
     @include max(1450) {
       margin-left: 0;
     }
+  }
+  &--pull-left {
+    margin-right: 140px;
   }
   @include max(768) {
     margin-right: 0;
@@ -80,7 +83,7 @@
 
 .nav__link {
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 15px;
   text-transform: capitalize;
   text-decoration: none;
   color: #333;
