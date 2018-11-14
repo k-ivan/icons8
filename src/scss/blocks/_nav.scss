@@ -69,7 +69,7 @@
   }
   &--pull-right {
     margin-left: auto;
-    @include max(1450) {
+    @include max(1250) {
       margin-left: 0;
     }
   }
