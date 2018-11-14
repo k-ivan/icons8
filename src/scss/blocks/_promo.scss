@@ -1,5 +1,5 @@
 .promo {
-  padding: 55px 20px;
+  padding: 80px 20px 105px;
   position: relative;
   color: #fff;
 
@@ -20,10 +20,13 @@
 
 .promo__text {
   margin-top: 0;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   text-align: center;
+  text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.15;
+
   @include max(768) {
     font-size: 22px;
   }
