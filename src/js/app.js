@@ -48,7 +48,8 @@ gamburgOverlay.addEventListener('click', function(e) {
 // video modal
 const triggerVideo = document.getElementById('videoTrigger');
 const video = new VideoModal('https://www.youtube.com/embed/C4TcBmdaa-Q?autoplay=1');
-triggerVideo.addEventListener('click', function() {
+triggerVideo.addEventListener('click', function(e) {
+  e.preventDefault();
   video.open();
 });
 
