@@ -11,7 +11,6 @@
     left: -220px;
     bottom: 0;
     z-index: 999;
-    padding-top: 70px;
     width: 220px;
     flex-direction: column;
     background-color: #333;
@@ -20,9 +19,21 @@
   }
 }
 
+.nav__logo {
+  display: none;
+}
+
 @include max(768) {
   .nav-open .nav {
     transform: translate3d(220px, 0, 0);
+  }
+  .nav__logo {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: block;
+    margin-bottom: 30px;
+    filter: invert(1);
   }
 }
 
