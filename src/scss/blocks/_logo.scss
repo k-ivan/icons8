@@ -26,3 +26,10 @@
   width: 100%;
   height: 100%;
 }
+
+@include max(768) {
+  .nav-open .logo {
+    z-index: 1000;
+    filter: invert(1);
+  }
+}
